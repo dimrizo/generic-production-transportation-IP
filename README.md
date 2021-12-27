@@ -75,6 +75,4 @@ Additionally, the next two constraints should be considered:
 a) Any single factory can not produce more than 2 products.
 b) Any single product can not be produced in more than 2 factories.
 
-```math
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-```
