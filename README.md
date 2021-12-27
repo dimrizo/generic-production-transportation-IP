@@ -12,39 +12,39 @@ i = 2 | 5 | 4 | 2 |
 i = 3 | 4 | 6 | 5 |
 
 Cost of transportation of product `k` from factory `i` to market `j = 1`:
-|   | `k = 1` | `k = 2` | `k = 3` |
+|   | k = 1 | k = 2 | k = 3 |
 --- | --- | --- | --- |
-`i = 1` | 2 | 4 | 6 |
-`i = 2` | 4 | 5 | 2 |
-`i = 3` | 5 | 3 | 4 |
+i = 1 | 2 | 4 | 6 |
+i = 2 | 4 | 5 | 2 |
+i = 3 | 5 | 3 | 4 |
 
 Cost of transportation of product `k` from factory `i` to market `j = 2`:
-|   | `k = 1` | `k = 2` | `k = 3` |
+|   | k = 1 | k = 2 | k = 3 |
 --- | --- | --- | --- |
-`i = 1` | 5 | 3 | 3 |
-`i = 2` | 2 | 2 | 5 |
-`i = 3` | 4 | 6 | 4 |
+i = 1 | 5 | 3 | 3 |
+i = 2 | 2 | 2 | 5 |
+i = 3 | 4 | 6 | 4 |
 
 Cost of transportation of product `k` from factory `i` to market `j = 3`:
-|   | `k = 1` | `k = 2` | `k = 3` |
+|   | k = 1 | k = 2 | k = 3 |
 --- | --- | --- | --- |
-`i = 1` | 2 | 5 | 4 |
-`i = 2` | 3 | 5 | 2 |
-`i = 3` | 6 | 4 | 3 |
+i = 1 | 2 | 5 | 4 |
+i = 2 | 3 | 5 | 2 |
+i = 3 | 6 | 4 | 3 |
 
 Set-up cost for production of product `k` at factory `i`:
-|   | `k = 1` | `k = 2` | `k = 3` |
+|   | k = 1 | k = 2 | k = 3 |
 --- | --- | --- | --- |
-`i = 1` | 20 | 35 | 50 |
-`i = 2` | 30 | 40 | 25 |
-`i = 3` | 40 | 45 | 35 |
+i = 1 | 20 | 35 | 50 |
+i = 2 | 30 | 40 | 25 |
+i = 3 | 40 | 45 | 35 |
 
 Maximum output production for product `k` at factory `i`:
-|   | `k = 1` | `k = 2` | `k = 3` |
+|   | k = 1 | k = 2 | k = 3 |
 --- | --- | --- | --- |
-`i = 1` | 500 | 950 | 900 |
-`i = 2` | 400 | 900 | 850 |
-`i = 3` | 900 | 850 | 950 |
+i = 1 | 500 | 950 | 900 |
+i = 2 | 400 | 900 | 850 |
+i = 3 | 900 | 850 | 950 |
 
 Minimum output production for product `k` at factory `i` (in the case that we have non-zero production):
 |   | k = 1 | k = 2 | k = 3 |
