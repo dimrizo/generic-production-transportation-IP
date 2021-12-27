@@ -1,0 +1,78 @@
+!Lingo hardcoded implementation of a simple IP production and transportation problem;
+!Saved as .txt file for vieweing purposes on GitHub. Save as .lg4 or copy paste to Lingo;
+
+MIN = 5*X111 + 9*X121 + 9*X131 + 
+8*X112 + 7*X122 + 8*X132 +
+5*X113 + 8*X123 + 10*X133 + 
+9*X211 + 9*X221 + 9*X231 +
+8*X212 + 6*X222 + 12*X232 + 
+10*X213 + 9*X223 + 10*X233 +
+11*X311 + 4*X321 + 9*X331 +
+8*X312 + 7*X322 + 9*X332 + 
+9*X313 + 4*X323 + 8*X333 +
+20*P11 + 30*P12 + 40*P13 +
+35*P21 + 40*P22 + 45*P23 +
+50*P31 + 25*P32 + 35*P33;
+
+!Constraint 1: Maximum output production;
+X111 + X112 + X113 <= 500*P11;
+X121 + X122 + X123 <= 400*P12;
+X131 + X132 + X133 <= 900*P13;
+X211 + X212 + X213 <= 950*P21;
+X221 + X222 + X223 <= 900*P22;
+X231 + X232 + X233 <= 850*P23;
+X311 + X312 + X313 <= 900*P31;
+X321 + X322 + X323 <= 850*P32;
+X331 + X332 + X333 <= 950*P33;
+
+!Constraint 2: Minimum output production;
+X111 + X112 + X113 >= 10*P11;
+X121 + X122 + X123 >= 5*P12;
+X131 + X132 + X133 >= 4*P13;
+X211 + X212 + X213 >= 5*P21;
+X221 + X222 + X223 >= 10*P22;
+X231 + X232 + X233 >= 5*P23;
+X311 + X312 + X313 >= 8*P31;
+X321 + X322 + X323 >= 5*P32;
+X331 + X332 + X333 >= 4*P33;
+
+!Constraint 3: Capacity constraint per factory;
+2*(X111 + X112 + X113) + 2*(X211 + X212 + X213) + 3*(X311 + X312 + X313) <= 2000;
+3*(X121 + X122 + X123) + 1*(X221 + X222 + X223) + 2*(X321 + X322 + X323) <= 3500;
+4*(X131 + X132 + X133) + 2*(X231 + X232 + X233) + 3*(X331 + X332 + X333) <= 5000;
+
+!Constraint 4: Demand satisfaction constraint;
+X111 + X121 + X131 >= 200;
+X211 + X221 + X231 >= 350;
+X311 + X321 + X331 >= 500;
+X112 + X122 + X132 >= 300;
+X212 + X222 + X232 >= 400;
+X312 + X322 + X332 >= 250;
+X113 + X123 + X133 >= 400;
+X213 + X223 + X233 >= 450;
+X313 + X323 + X333 >= 350;
+
+!Constraint 5: Each factory can produce at maximum two products;
+P11 + P21 + P31 <= 2;
+P12 + P22 + P32 <= 2;
+P13 + P23 + P33 <= 2;
+
+!Constraint 6: Each product can be produced at maximum at two factories;
+P11 + P12 + P13 <= 2;
+P21 + P22 + P23 <= 2;
+P31 + P32 + P33 <= 2;
+
+!Declaration of decision variables;
+@GIN(X111); @GIN(X112); @GIN(X113);
+@GIN(X121); @GIN(X122); @GIN(X123);
+@GIN(X131); @GIN(X132); @GIN(X133);
+@GIN(X211); @GIN(X212); @GIN(X213); 
+@GIN(X221); @GIN(X222); @GIN(X223); 
+@GIN(X231); @GIN(X232); @GIN(X233); 
+@GIN(X311); @GIN(X312); @GIN(X313);
+@GIN(X321); @GIN(X322); @GIN(X323); 
+@GIN(X331); @GIN(X332); @GIN(X333); 
+@BIN(P11); @BIN(P12); @BIN(P13); 
+@BIN(P21); @BIN(P22); @BIN(P23); 
+@BIN(P31); @BIN(P32); @BIN(P33);
+
