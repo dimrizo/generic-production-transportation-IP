@@ -76,5 +76,5 @@ a) Any single factory can not produce more than 2 products.
 b) Any single product can not be produced in more than 2 factories.
 
 ```math
-e^i + 1 = 0
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 ```
