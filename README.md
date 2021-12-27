@@ -10,3 +10,10 @@ Cost of production for a single unit of product `k` at factory `i`:
 `i = 1` | 3 | 5 | 5 |
 `i = 2` | 5 | 4 | 2 |
 `i = 3` | 4 | 6 | 5 |
+
+Cost of transportation of product `k` from factory `i` to market `j = 1`:
+|   | `k = 1` | `k = 2` | `k = 3` |
+--- | --- | --- | --- |
+`i = 1` | 2 | 4 | 6 |
+`i = 2` | 4 | 5 | 2 |
+`i = 3` | 5 | 3 | 4 |
