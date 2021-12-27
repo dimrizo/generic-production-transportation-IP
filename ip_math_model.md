@@ -33,4 +33,4 @@ Mathematical IP model for problem solution. For the development of this .md file
 
 | Objective function | Numbering |
 |:---:|:---:|
-| <img src="https://render.githubusercontent.com/render/math?math=MINIMIZE\ \sum_{k\ =\ 1}^{3}\sum_{i\ =\ 1}^{3}{\sum_{j\ =\ 1}^{3}{(X_{kij}\ast({UPC}_{ki}%2B{TC}_{kij}))}\ }%2B\sum_{k=1}^{3}\sum_{i=1}^{3}{P_{ki}\ast{SUC}_{ki}}">| 7 |
+| <img src="https://render.githubusercontent.com/render/math?math=MINIMIZE   \ \sum_{k\ =\ 1}^{3}\sum_{i\ =\ 1}^{3}{\sum_{j\ =\ 1}^{3}{(X_{kij}\ast({UPC}_{ki}%2B{TC}_{kij}))}\ }%2B\sum_{k=1}^{3}\sum_{i=1}^{3}{P_{ki}\ast{SUC}_{ki}}">| 7 |
